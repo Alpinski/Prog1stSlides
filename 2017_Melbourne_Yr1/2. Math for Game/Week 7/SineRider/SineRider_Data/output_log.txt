@@ -4,31 +4,223 @@ Direct3D:
     Version:  Direct3D 9.0c [nvd3dum.dll 21.21.13.7633]
     Renderer: NVIDIA GeForce GTX 960
     Vendor:   NVIDIA
-    VRAM:     1969 MB (via DXGI)
+    VRAM:     3072 MB (via DXGI)
     Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 NULL=1 RESZ=0 SlowINTZ=0
 Begin MonoManager ReloadAssembly
-Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\SixBySeven.dll (this message is harmless)
-Loading Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\SixBySeven.dll into Unity Child Domain
-Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\Gif.Components.dll (this message is harmless)
-Loading Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\Gif.Components.dll into Unity Child Domain
-Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\Vectrosity.dll (this message is harmless)
-Loading Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\Vectrosity.dll into Unity Child Domain
-- Completed reload, in  1.781 seconds
+Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\SixBySeven.dll (this message is harmless)
+Loading Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\SixBySeven.dll into Unity Child Domain
+Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\Gif.Components.dll (this message is harmless)
+Loading Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\Gif.Components.dll into Unity Child Domain
+Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\Vectrosity.dll (this message is harmless)
+Loading Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\Vectrosity.dll into Unity Child Domain
+- Completed reload, in  1.705 seconds
 <RI> Initializing input.
 <RI> Input initialized.
-desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
 <RI> Initialized touch support.
-Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\Math for Game\Week 7\SineRider\SineRider_Data\Managed\System.dll (this message is harmless)
+Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: Z:\DegreeProg\2017_Melbourne_Yr1\2. Math for Game\Week 7\SineRider\SineRider_Data\Managed\System.dll (this message is harmless)
+Setting Puzzle 1 from 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Current Puzzle: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,YAMP.Value].Add (System.String key, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (YAMP.ParseContext context, System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at Graph.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting Puzzle 2 from 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Current Puzzle: 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,YAMP.Value].Add (System.String key, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (YAMP.ParseContext context, System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at Graph.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting Puzzle 3 from 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Current Puzzle: 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,YAMP.Value].Add (System.String key, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (YAMP.ParseContext context, System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at Graph.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting Puzzle 0 from 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Current Puzzle: 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,YAMP.Value].Add (System.String key, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (YAMP.ParseContext context, System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at Graph.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting Puzzle 1 from 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Current Puzzle: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,YAMP.Value].Add (System.String key, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (YAMP.ParseContext context, System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at Graph.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,YAMP.Value].Add (System.String key, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (YAMP.ParseContext context, System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at Graph.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting Puzzle 2 from 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Current Puzzle: 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,YAMP.Value].Add (System.String key, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (YAMP.ParseContext context, System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at Graph.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,YAMP.Value].Add (System.String key, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (YAMP.ParseContext context, System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at Graph.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting Puzzle 3 from 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Current Puzzle: 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,YAMP.Value].Add (System.String key, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (YAMP.ParseContext context, System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at Graph.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting Puzzle 4 from 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Current Puzzle: 4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,YAMP.Value].Add (System.String key, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (YAMP.ParseContext context, System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at Graph.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting Puzzle 3 from 4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Current Puzzle: 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Setting Puzzle 4 from 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Current Puzzle: 4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Setting Puzzle 5 from 4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Current Puzzle: 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,YAMP.Value].Add (System.String key, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (YAMP.ParseContext context, System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at Graph.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting Puzzle 6 from 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Current Puzzle: 6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,YAMP.Value].Add (System.String key, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (YAMP.ParseContext context, System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at YAMP.Parser.AddVariable (System.String name, YAMP.Value value) [0x00000] in <filename unknown>:0 
+  at Graph.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+

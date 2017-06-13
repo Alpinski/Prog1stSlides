@@ -1,0 +1,5 @@
+Class
+State
+Sequence
+Collaboration
+Activity

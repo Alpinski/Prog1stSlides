@@ -1,0 +1,9 @@
+void Entity::setParent(Entity* sParent)
+{
+	m_parent = sParent;
+}
+
+void Entity::setChild(Entity* sChild)
+{
+	m_children.push_back(sChild);
+}
