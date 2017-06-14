@@ -11,5 +11,9 @@ public:
 	void OnUpdate(float fDeltaTime, StateMachine* pMachine);
 	void OnDraw(Renderer2D* m_2dRenderer);
 	void OnExit();
+
+private:
+
+	Font*		m_font;
 };
 

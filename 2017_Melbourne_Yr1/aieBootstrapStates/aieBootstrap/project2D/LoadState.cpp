@@ -1,13 +1,9 @@
 #include "LoadState.h"
-#include <iostream>
-#include "Input.h"
 #include "BaseState.h"
 #include "ResourceManager.h"
 #include "Font.h"
 #include "StateMachine.h"
 
-
-using namespace std;
 
 LoadState::LoadState()
 {
@@ -20,6 +16,7 @@ LoadState::~LoadState()
 
 void LoadState::OnEnter(StateMachine* pMachine)
 {
+	m_font = new Font("./font/consolas.ttf", 32);
 	pMachine->SetBackgroundRender(false);
 }
 
@@ -30,16 +27,16 @@ void LoadState::OnUpdate(float fDeltaTime, StateMachine* pMachine)
 	if (timer > 3)
 	{
 		pMachine->PopState();
+		pMachine->PushState(2);
 	}
 }
 
 void LoadState::OnDraw(Renderer2D * m_2dRenderer)
 {
-	m_2dRenderer->drawText(m_font, "I'M LOADING FOOL!", 0, 720 - 32);
-	
+	m_2dRenderer->drawText(m_font, "I'M LOADING FOOL!", 0, 720 - 32);	
 }
 
 void LoadState::OnExit()
 {
-
+	delete m_font;
 }

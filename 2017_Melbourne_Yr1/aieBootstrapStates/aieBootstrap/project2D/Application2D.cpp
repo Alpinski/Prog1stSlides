@@ -31,18 +31,14 @@ bool Application2D::startup()
 
 	m_StateMachine = new StateMachine();
 
-
-	m_StateMachine->AddState(0, new GameState());
-	m_StateMachine->AddState(1, new MenuState());
-	m_StateMachine->AddState(2, new SplashState());
+	m_StateMachine->AddState(0, new MenuState());
+	m_StateMachine->AddState(1, new SplashState());
+	m_StateMachine->AddState(2, new GameState());
 	m_StateMachine->AddState(3, new LoadState());
 	m_StateMachine->AddState(4, new PauseState());
 
-	m_StateMachine->PushState(0);
 	m_StateMachine->PushState(1);
-	m_StateMachine->PushState(2);
-	m_StateMachine->PushState(3);
-	m_StateMachine->PushState(4);
+	
 
 
 	m_cameraX = 0;

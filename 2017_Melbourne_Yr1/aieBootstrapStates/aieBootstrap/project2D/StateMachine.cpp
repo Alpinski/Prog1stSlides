@@ -11,7 +11,10 @@ StateMachine::StateMachine()
 StateMachine::~StateMachine()
 {
 	while (m_CurrentStack.Size() > 0)
+	{
 		PopState();
+	}
+	
 
 	for (int i = 0; i < m_CurrentStack.Size(); ++i)
 	{
@@ -47,7 +50,7 @@ void StateMachine::PushState(int nStateIndex)
 		m_CurrentStack.Top()->OnExit();
 
 	m_CurrentStack.Push(m_StateList[nStateIndex]);
-	m_CurrentStack.Top()->OnEnter();
+	m_CurrentStack.Top()->OnEnter(this);
 }
 
 void StateMachine::PopState()
@@ -56,7 +59,10 @@ void StateMachine::PopState()
 		m_CurrentStack.Top()->OnExit();
 	
 	m_CurrentStack.Pop();
-	m_CurrentStack.Top()->OnEnter();
+	if (m_CurrentStack.Size() > 0)
+	{
+		m_CurrentStack.Top()->OnEnter(this);
+	}	
 }
 
 void StateMachine::SetBackgroundRender(bool onOff)

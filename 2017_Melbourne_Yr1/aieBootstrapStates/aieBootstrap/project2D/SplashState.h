@@ -7,9 +7,13 @@ public:
 	SplashState();
 	~SplashState();
 
-	void OnEnter();
+	void OnEnter(StateMachine* pMachine);
 	void OnUpdate(float fDeltaTime, StateMachine* pMachine);
 	void OnDraw(Renderer2D* m_2dRenderer);
 	void OnExit();
+
+private:
+	float		timer;
+	Font*		m_font;
 };
 
