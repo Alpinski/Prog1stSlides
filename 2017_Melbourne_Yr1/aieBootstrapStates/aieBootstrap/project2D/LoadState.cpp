@@ -8,16 +8,19 @@
 LoadState::LoadState()
 {
 	timer = 0;
+	ResourceManager<Font>* pTextureMan = ResourceManager<Font>::GetInstance();
+	m_font = pTextureMan->LoadResource("./font/consolas.ttf", 32);
 }
 
 LoadState::~LoadState()
 {
+	delete m_font;
 }
 
 void LoadState::OnEnter(StateMachine* pMachine)
 {
-	m_font = new Font("./font/consolas.ttf", 32);
 	pMachine->SetBackgroundRender(false);
+	timer = 0;
 }
 
 void LoadState::OnUpdate(float fDeltaTime, StateMachine* pMachine)
@@ -36,7 +39,6 @@ void LoadState::OnDraw(Renderer2D * m_2dRenderer)
 	m_2dRenderer->drawText(m_font, "I'M LOADING FOOL!", 0, 720 - 32);	
 }
 
-void LoadState::OnExit()
+void LoadState::OnExit(StateMachine* pMachine)
 {
-	delete m_font;
 }

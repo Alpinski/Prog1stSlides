@@ -5,13 +5,13 @@ template<typename T>
 class Resource
 {
 public:
-	Resource(char* szFileName)
+	Resource(char* szFileName, int size)
 	{
 		int length = strlen(szFileName) + 1;
 		m_szFileName = new char [length];
 		strcpy_s(m_szFileName, length, szFileName);
 		
-		m_Data = new T(szFileName);
+		m_Data = new T(szFileName, size);
 	}
 	~Resource()
 	{

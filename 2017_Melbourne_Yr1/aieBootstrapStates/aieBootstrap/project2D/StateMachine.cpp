@@ -36,6 +36,11 @@ void StateMachine::Draw(Renderer2D* m_2dRenderer)
 	if (m_CurrentStack.Size() <= 0)
 		return;
 
+	if (Onoff == true)
+	{
+		m_CurrentStack.SecondL()->OnDraw(m_2dRenderer);
+	}
+
 	m_CurrentStack.Top()->OnDraw(m_2dRenderer);
 }
 
@@ -47,7 +52,7 @@ void StateMachine::PushState(int nStateIndex)
 		return;*/
 
 	if (m_CurrentStack.Size() > 0)
-		m_CurrentStack.Top()->OnExit();
+		m_CurrentStack.Top()->OnExit(this);
 
 	m_CurrentStack.Push(m_StateList[nStateIndex]);
 	m_CurrentStack.Top()->OnEnter(this);
@@ -56,7 +61,7 @@ void StateMachine::PushState(int nStateIndex)
 void StateMachine::PopState()
 {
 	if (m_CurrentStack.Size() > 0)
-		m_CurrentStack.Top()->OnExit();
+		m_CurrentStack.Top()->OnExit(this);
 	
 	m_CurrentStack.Pop();
 	if (m_CurrentStack.Size() > 0)

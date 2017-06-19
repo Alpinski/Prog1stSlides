@@ -1,5 +1,5 @@
 #pragma once
-#include "DynamicArray.h"
+#include "Map.h"
 #include "Resource.h"
 #include <string.h>
 
@@ -9,7 +9,7 @@ class ResourceManager
 public:
 	
 
-	T* LoadResource(char* szFileName)
+	T* LoadResource(char* szFileName, int size)
 	{
 		//check if resource is already loaded
 		//if it is, return it
@@ -21,7 +21,7 @@ public:
 			}
 		}
 		//resource is not loaded, so load it
-		Resource<T>* pResource = new Resource<T>(szFileName);
+		Resource<T>* pResource = new Resource<T>(szFileName, size);
 		m_ResourceList.pushBack(pResource);
 		return pResource->m_Data;
 	}
@@ -62,7 +62,7 @@ private:
 		UnloadAllResources();
 	}
 
-	DynamicArray<Resource<T>*>m_ResourceList;
+	Map<Resource<T>*>m_ResourceList;
 	static ResourceManager<T>* m_pInstance;
 };
 

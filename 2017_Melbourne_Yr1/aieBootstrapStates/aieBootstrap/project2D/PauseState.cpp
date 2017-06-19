@@ -1,22 +1,25 @@
 #include "PauseState.h"
 #include "StateMachine.h"
+#include "ResourceManager.h"
 #include "Font.h"
 #include "Input.h"
 
 
 PauseState::PauseState()
 {
-
+	ResourceManager<Font>* pTextureMan = ResourceManager<Font>::GetInstance();
+	m_font = pTextureMan->LoadResource("./font/consolas.ttf", 32);
 }
 
 
 PauseState::~PauseState()
 {
+	delete m_font;
 }
 
 void PauseState::OnEnter(StateMachine* pMachine)
 {
-	m_font = new Font("./font/consolas.ttf", 32);
+	pMachine->SetBackgroundRender(true);
 }
 
 void PauseState::OnUpdate(float fDeltaTime, StateMachine * pMachine)
@@ -31,11 +34,11 @@ void PauseState::OnUpdate(float fDeltaTime, StateMachine * pMachine)
 
 void PauseState::OnDraw(Renderer2D * m_2dRenderer)
 {
-	m_2dRenderer->drawText(m_font, "PAUSED!", 0, 720 - 32);
-	m_2dRenderer->drawText(m_font, "Press P to Unpause!", 0, 720 - 32);
+	m_2dRenderer->drawText(m_font, "PAUSED!", 620, 450);
+	m_2dRenderer->drawText(m_font, "Press P to Unpause!", 520, 400);
 }
 
-void PauseState::OnExit()
+void PauseState::OnExit(StateMachine* pMachine)
 {
-	delete m_font;
+	pMachine->SetBackgroundRender(false);
 }

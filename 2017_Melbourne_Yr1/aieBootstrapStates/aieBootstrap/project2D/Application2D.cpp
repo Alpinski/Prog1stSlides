@@ -3,6 +3,7 @@
 #include "Font.h"
 #include "Input.h"
 #include "StateMachine.h"
+#include "ResourceManager.h"
 #include "LoadState.h"
 #include "GameState.h"
 #include "MenuState.h"
@@ -22,6 +23,8 @@ Application2D::~Application2D()
 bool Application2D::startup() 
 {
 	m_2dRenderer = new Renderer2D();
+
+	ResourceManager<Font>::Create();
 
 	m_shipTexture = new Texture("./textures/ship.png");
 
@@ -84,8 +87,8 @@ void Application2D::update(float deltaTime)
 		m_audio->play();
 
 	// exit the application
-	if (input->isKeyDown(INPUT_KEY_ESCAPE))
-		quit();
+	//if (input->isKeyDown(INPUT_KEY_ESCAPE))
+	//	quit();
 }
 
 void Application2D::draw() 

@@ -91,10 +91,13 @@
   <ItemGroup>
     <ClCompile Include="Application2D.cpp" />
     <ClCompile Include="BaseState.cpp" />
+    <ClCompile Include="Entity.cpp" />
     <ClCompile Include="GameState.cpp" />
     <ClCompile Include="LoadState.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MenuState.cpp" />
+    <ClCompile Include="MeObject.cpp" />
+    <ClCompile Include="ObjectPool.cpp" />
     <ClCompile Include="PauseState.cpp" />
     <ClCompile Include="SplashState.cpp" />
     <ClCompile Include="StateMachine.cpp" />
@@ -103,9 +106,13 @@
     <ClInclude Include="Application2D.h" />
     <ClInclude Include="BaseState.h" />
     <ClInclude Include="DynamicArray.h" />
+    <ClInclude Include="Entity.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="LoadState.h" />
+    <ClInclude Include="Map.h" />
     <ClInclude Include="MenuState.h" />
+    <ClInclude Include="MeObject.h" />
+    <ClInclude Include="ObjectPool.h" />
     <ClInclude Include="PauseState.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="ResourceManager.h" />

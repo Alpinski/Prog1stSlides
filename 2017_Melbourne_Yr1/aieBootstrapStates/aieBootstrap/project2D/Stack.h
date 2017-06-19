@@ -40,6 +40,11 @@ public:
 		return m_pData->Back();
 	}
 
+	T SecondL()
+	{
+		return m_pData->SecondLast();
+	}
+
 	DynamicArray<T>*m_pData;
 };
 

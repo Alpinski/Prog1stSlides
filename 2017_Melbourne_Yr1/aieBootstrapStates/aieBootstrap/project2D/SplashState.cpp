@@ -8,16 +8,19 @@
 SplashState::SplashState()
 {
 	timer = 0;
+	ResourceManager<Font>* pTextureMan = ResourceManager<Font>::GetInstance();
+
+	m_font = pTextureMan->LoadResource("./font/consolas.ttf", 32);
 }
 
 
 SplashState::~SplashState()
 {
+	delete m_font;
 }
 
 void SplashState::OnEnter(StateMachine* pMachine)
 {
-	m_font = new Font("./font/consolas.ttf", 32);
 	pMachine->SetBackgroundRender(false);
 }
 
@@ -37,7 +40,6 @@ void SplashState::OnDraw(Renderer2D * m_2dRenderer)
 	m_2dRenderer->drawText(m_font, "Splash!!!", 0, 720 - 32);
 }
 
-void SplashState::OnExit()
+void SplashState::OnExit(StateMachine* pMachine)
 {
-	delete m_font;
 }

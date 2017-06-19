@@ -1,22 +1,28 @@
 #include "GameState.h"
 #include "StateMachine.h"
+#include "ResourceManager.h"
 #include "Font.h"
 #include "Input.h"
+#include "MeObject.h"
+
 
 
 GameState::GameState()
 {
 	m_timer = 0;
+
+	obj = new ObjectPool(10);
+	ResourceManager<Font>* pTextureMan = ResourceManager<Font>::GetInstance();
+	m_font = pTextureMan->LoadResource("./font/consolas.ttf", 32);
 }
 
 GameState::~GameState()
 {
+	delete m_font;
 }
 
 void GameState::OnEnter(StateMachine* pMachine)
 {
-	m_font = new Font("./font/consolas.ttf", 32);
-
 }
 
 void GameState::OnUpdate(float fDeltaTime, StateMachine * pMachine)
@@ -33,28 +39,23 @@ void GameState::OnUpdate(float fDeltaTime, StateMachine * pMachine)
 		pMachine->PopState();
 		pMachine->PushState(0);
 	}
-	if (input->isKeyDown(INPUT_KEY_1))
+	if (input->wasKeyPressed(INPUT_KEY_A))
 	{
-		m_draw = true;
+		MeObject* CircleLookin = obj->Allocate();
 	}
+	obj->Update(fDeltaTime);
 }
 
 void GameState::OnDraw(Renderer2D * m_2dRenderer)
 {
-	m_2dRenderer->drawText(m_font, "Press 1 to draw moving square!", 0, 720 - 32);
-	m_2dRenderer->drawText(m_font, "P to Pause!", 0, 720 - 32);
-
-	if (m_draw == true)
-	{
-		m_2dRenderer->setRenderColour(1, 0, 1, 1);
-		m_2dRenderer->drawCircle(sin(m_timer) * 100 + 600, 150, 50);
-	}
-
-
+	//obj->Draw(m_2dRenderer);
+	m_2dRenderer->drawText(m_font, "Press A to draw moving circle!", 0, 690);
+	m_2dRenderer->drawText(m_font, "P to Pause!", 0, 650);
+	obj->Draw(m_2dRenderer);
 }
 
-void GameState::OnExit()
+void GameState::OnExit(StateMachine* pMachine)
 {
-	delete m_font;
+
 }
 
