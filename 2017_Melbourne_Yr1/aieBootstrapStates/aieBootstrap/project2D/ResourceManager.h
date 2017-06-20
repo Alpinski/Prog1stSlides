@@ -1,28 +1,26 @@
 #pragma once
-#include "Map.h"
+#include "MyMap.h"
 #include "Resource.h"
 #include <string.h>
+#include <crtdbg.h>
 
 template<typename T>
 class ResourceManager
 {
 public:
-	
 
-	T* LoadResource(char* szFileName, int size)
+	T* LoadResource(char* szFileName , int Size)
 	{
 		//check if resource is already loaded
 		//if it is, return it
-		for (int i = 0; i < m_ResourceList.Size(); ++i)
-		{
-			if (strcmp(m_ResourceList[i]->m_szFileName, szFileName) == 0)
+			if (m_ResourceList.IsItem(szFileName))
 			{
-				return m_ResourceList[i]->m_Data;
+				return m_ResourceList[szFileName]->m_Data;
 			}
-		}
 		//resource is not loaded, so load it
-		Resource<T>* pResource = new Resource<T>(szFileName, size);
-		m_ResourceList.pushBack(pResource);
+		Resource<T>* pResource = new Resource<T>(szFileName, Size);
+		_ASSERT(pResource);
+		m_ResourceList.AddItem(szFileName, pResource);
 		return pResource->m_Data;
 	}
 
@@ -62,7 +60,7 @@ private:
 		UnloadAllResources();
 	}
 
-	Map<Resource<T>*>m_ResourceList;
+	AssocArray<Resource<T>*>m_ResourceList;
 	static ResourceManager<T>* m_pInstance;
 };
 

@@ -1,6 +1,7 @@
 #include "ObjectPool.h"
 #include "Entity.h"
 #include "Renderer2D.h"
+#include <crtdbg.h>
 
 using namespace aie;
 
@@ -8,9 +9,11 @@ ObjectPool::ObjectPool(int nMaxSize)
 {
 	m_nMaxSize = nMaxSize;
 	m_pPool = new MeObject*[nMaxSize];
+	_ASSERT(m_pPool);
 	for (int i = 0; i < nMaxSize; ++i)
 	{
 		m_pPool[i] = new MeObject();
+		_ASSERT(m_pPool[i]);
 	}
 }
 

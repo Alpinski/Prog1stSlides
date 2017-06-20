@@ -2,7 +2,7 @@
 #include "ResourceManager.h"
 #include "Font.h"
 #include "StateMachine.h"
-
+#include <crtdbg.h>
 
 
 SplashState::SplashState()
@@ -11,6 +11,7 @@ SplashState::SplashState()
 	ResourceManager<Font>* pTextureMan = ResourceManager<Font>::GetInstance();
 
 	m_font = pTextureMan->LoadResource("./font/consolas.ttf", 32);
+	_ASSERT(m_font);
 }
 
 

@@ -14,7 +14,6 @@ StateMachine::~StateMachine()
 	{
 		PopState();
 	}
-	
 
 	for (int i = 0; i < m_CurrentStack.Size(); ++i)
 	{
@@ -47,9 +46,9 @@ void StateMachine::Draw(Renderer2D* m_2dRenderer)
 void StateMachine::PushState(int nStateIndex)
 {
 	// Example of Assert
-	/*_ASSERT(nStateIndex < m_StateList.Size());
+	_ASSERT(nStateIndex < m_StateList.Size());
 	if (nStateIndex >= m_StateList.Size())
-		return;*/
+		return;
 
 	if (m_CurrentStack.Size() > 0)
 		m_CurrentStack.Top()->OnExit(this);
@@ -60,6 +59,8 @@ void StateMachine::PushState(int nStateIndex)
 
 void StateMachine::PopState()
 {
+	_ASSERT(m_CurrentStack.Size());
+
 	if (m_CurrentStack.Size() > 0)
 		m_CurrentStack.Top()->OnExit(this);
 	

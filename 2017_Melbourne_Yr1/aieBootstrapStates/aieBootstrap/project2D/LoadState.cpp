@@ -3,13 +3,14 @@
 #include "ResourceManager.h"
 #include "Font.h"
 #include "StateMachine.h"
-
+#include <crtdbg.h>
 
 LoadState::LoadState()
 {
 	timer = 0;
 	ResourceManager<Font>* pTextureMan = ResourceManager<Font>::GetInstance();
 	m_font = pTextureMan->LoadResource("./font/consolas.ttf", 32);
+	_ASSERT(m_font);
 }
 
 LoadState::~LoadState()

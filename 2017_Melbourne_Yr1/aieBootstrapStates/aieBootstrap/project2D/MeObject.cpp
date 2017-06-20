@@ -2,6 +2,7 @@
 #include "ResourceManager.h"
 #include "Renderer2D.h"
 #include "Font.h"
+#include <crtdbg.h>
 
 using namespace aie;
 
@@ -11,6 +12,7 @@ MeObject::MeObject()
 	m_timer = 0;
 	ResourceManager<Font>* pTextureMan = ResourceManager<Font>::GetInstance();
 	m_font = pTextureMan->LoadResource("./font/consolas.ttf", 32);
+	_ASSERT(m_font);
 }
 
 MeObject::~MeObject()

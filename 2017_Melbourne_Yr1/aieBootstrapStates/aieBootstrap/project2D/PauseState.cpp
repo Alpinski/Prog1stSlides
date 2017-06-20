@@ -3,12 +3,13 @@
 #include "ResourceManager.h"
 #include "Font.h"
 #include "Input.h"
-
+#include <crtdbg.h>
 
 PauseState::PauseState()
 {
 	ResourceManager<Font>* pTextureMan = ResourceManager<Font>::GetInstance();
 	m_font = pTextureMan->LoadResource("./font/consolas.ttf", 32);
+	_ASSERT(m_font);
 }
 
 

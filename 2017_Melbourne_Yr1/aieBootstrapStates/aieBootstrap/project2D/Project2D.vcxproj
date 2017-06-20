@@ -109,9 +109,9 @@
     <ClInclude Include="Entity.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="LoadState.h" />
-    <ClInclude Include="Map.h" />
     <ClInclude Include="MenuState.h" />
     <ClInclude Include="MeObject.h" />
+    <ClInclude Include="MyMap.h" />
     <ClInclude Include="ObjectPool.h" />
     <ClInclude Include="PauseState.h" />
     <ClInclude Include="Resource.h" />

@@ -4,7 +4,7 @@
 #include "Font.h"
 #include "Input.h"
 #include "MeObject.h"
-
+#include <crtdbg.h>
 
 
 GameState::GameState()
@@ -12,6 +12,8 @@ GameState::GameState()
 	m_timer = 0;
 
 	obj = new ObjectPool(10);
+	_ASSERT(obj);
+
 	ResourceManager<Font>* pTextureMan = ResourceManager<Font>::GetInstance();
 	m_font = pTextureMan->LoadResource("./font/consolas.ttf", 32);
 }

@@ -9,7 +9,7 @@
 #include "MenuState.h"
 #include "SplashState.h"
 #include "PauseState.h"
-
+#include <crtdbg.h>
 using namespace aie;
 
 Application2D::Application2D() 
@@ -23,26 +23,34 @@ Application2D::~Application2D()
 bool Application2D::startup() 
 {
 	m_2dRenderer = new Renderer2D();
+	_ASSERT(m_2dRenderer);
 
 	ResourceManager<Font>::Create();
 
 	m_shipTexture = new Texture("./textures/ship.png");
+	_ASSERT(m_shipTexture);
 
 	m_font = new Font("./font/consolas.ttf", 32);
+	_ASSERT(m_font);
 
 	m_audio = new Audio("./audio/powerup.wav");
+	_ASSERT(m_audio);
 
 	m_StateMachine = new StateMachine();
+	_ASSERT(m_StateMachine);
 
 	m_StateMachine->AddState(0, new MenuState());
+	_ASSERT(m_StateMachine);
 	m_StateMachine->AddState(1, new SplashState());
+	_ASSERT(m_StateMachine);
 	m_StateMachine->AddState(2, new GameState());
+	_ASSERT(m_StateMachine);
 	m_StateMachine->AddState(3, new LoadState());
+	_ASSERT(m_StateMachine);
 	m_StateMachine->AddState(4, new PauseState());
+	_ASSERT(m_StateMachine);
 
 	m_StateMachine->PushState(1);
-	
-
 
 	m_cameraX = 0;
 	m_cameraY = 0;
