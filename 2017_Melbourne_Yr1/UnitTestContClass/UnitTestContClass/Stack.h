@@ -38,7 +38,7 @@ public:
 
 	T Top()
 	{
-		return m_pData->Back();
+		return m_pData->popFront();
 	}
 
 	T SecondL()

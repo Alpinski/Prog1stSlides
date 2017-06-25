@@ -6,6 +6,7 @@ template<typename T>
 class DynamicArray
 {
 public:
+
 	DynamicArray(int initialSize = 0)
 	{
 		int initial = initialSize;
@@ -80,7 +81,7 @@ public:
 
 	void Insert(int index, T value)
 	{
-		if (index >= m_nUsed)
+		if (index > m_nUsed)
 		{
 			return ;
 		}
@@ -90,12 +91,12 @@ public:
 			Resize();
 		}
 
-		//memcpy(m_pData + index + 1, m_pData + index,sizeof(T) * (m_nUsed - index));
+		memcpy(m_pData + index + 1, m_pData + index,sizeof(T) * (m_nUsed - index));
 		
-		for (int i = m_nUsed - 1; i >= index; --i)
+		/*for (int i = m_nUsed - 1; i >= index; --i)
 		{
 			m_pData[i + 1] = m_pData[i];
-		}
+		}*/
 
 		m_pData[index] = value;
 		++m_nUsed;
@@ -110,7 +111,7 @@ public:
 		//backup value removed from array
 		T value = m_pData[index];
 		//shuffle all other values across to fill removed space 
-		for (int i = index; index < m_nUsed; ++i)
+		for (int i = index; i < m_nUsed; ++i)
 		{
 			m_pData[i] = m_pData[i + 1];
 		}
@@ -177,6 +178,15 @@ public:
 		return m_nCapacity;
 	}
 
+	T Back()
+	{
+		return m_pData[m_nUsed - 1];
+	}
+
+	T SecondLast()
+	{
+		return m_pData[m_nUsed - 2];
+	}
 protected:
 
 
